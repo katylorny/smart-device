@@ -3,13 +3,18 @@ extends common/layout
 block content
   main.main
     section.presentation
-      h1 Печатные платы
-      p производство и монтаж, поставка комплектующих, блоков и модулей
-      button.presentation__button.button(type="button") Получить бесплатную консультацию
-      img(src="img/boards.png" alt="Печатные платы")
+      div.presentation__wrapper
+        div.presentation__text
+          h1 Печатные платы
+          p производство и монтаж, поставка комплектующих, блоков и модулей
+          button.presentation__button.button(type="button")
+            span.button__text.button__text--default Получить бесплатную консультацию
+            span.button__text.button__text--mobile Бесплатная консультация
+          a.presentation__scroll(href="#") Скролл вниз
+        img(src="img/boards.png" alt="Печатные платы" width="705" height="515")
 
     section.advantages.container
-      h2.hidden Преимущества
+      h2.visually-hidden Преимущества
       ul.advantages__list
         li.advantages__item
           h3 Оперативные сроки
@@ -44,11 +49,9 @@ block content
       form.questions__form(action="https://echo.htmlacademy.ru" method="post" autocomplete="on")
         h2 Остались вопросы? Задайте их нам!
         p Мы проконсультируем Вас бесплатно
-        //div.questions__inputs
         input(type="text" placeholder="Имя")
         input(type="tel" placeholder="Телефон")
         textarea(placeholder="Ваш вопрос")
-        //div.questions__submit
         button.questions__button.button(type="submit") Задать вопрос
         input#agree(type="checkbox" name="agree")
         label(for="agree") Я согласен на обработку персональных данных

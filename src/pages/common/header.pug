@@ -1,9 +1,11 @@
 header.header
-  a.header__logo.logo
-    img(src='img/logo.svg' alt='Логотип Smart Device')
-    div.logo__text
-      p Smart Device
-      span умные технологии
-  a.header__mail.link(href='mailto:info@sd.ru') info@sd.ru
-  a.header__tel.link(href="tel:+74950005252") +7 (495) 000 52 52
-  button(class='header__button button' type='button') Заказать звонок
+  div.header__wrapper
+    a.header__logo.logo
+      img(src='img/logo.svg' alt='Логотип Smart Device' width="52" height="52")
+      div.logo__text
+        p Smart Device
+        span умные технологии
+    div.header__info
+      a.header__link.header__link--mail.link(href='mailto:info@sd.ru') info@sd.ru
+      a.header__link.header__link--tel.link(href="tel:+74950005252") +7 (495) 000 52 52
+      button(class='header__button button' type='button') Заказать звонок

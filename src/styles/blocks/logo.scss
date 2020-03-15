@@ -1,0 +1,44 @@
+@import "../utils/variables";
+
+.logo {
+  display: flex;
+}
+
+.logo__text {
+  margin: 5px 5px 5px 20px;
+}
+
+.logo__text p {
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 29px;
+  margin: 0;
+}
+
+.logo__text span {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+}
+
+@media (max-width: $desktop-width) {
+  .logo__text {
+    margin: 5px 5px 5px 14px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .logo__text {
+    display: none;
+  }
+
+  .logo img {
+    width: 38px;
+    height: 38px;
+  }
+}

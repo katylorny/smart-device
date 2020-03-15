@@ -1,0 +1,34 @@
+@import "../utils/variables";
+
+.button {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 15px 24px 15px 25px;
+  margin: 5px;
+  background-color: transparent;
+  color: white;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.button__text--mobile {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .button__text--mobile {
+    display: block;
+  }
+
+  .button__text--default {
+    display: none;
+  }
+}

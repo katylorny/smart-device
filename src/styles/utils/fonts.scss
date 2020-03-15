@@ -1,1 +1,41 @@
 // Файл для подключения нестандартных шрифтов
+
+// Roboto Condensed regular
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/roboto-condensed-v18-cyrillic-regular.woff2") format("woff2"), url("../../fonts/roboto-condensed-v18-cyrillic-regular.woff") format("woff");
+  font-display: swap;
+}
+
+// Roboto Condensed bold
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/roboto-condensed-v18-cyrillic-700.woff2") format("woff2"), url("../../fonts/roboto-condensed-v18-cyrillic-700.woff") format("woff");
+  font-display: swap;
+}
+
+// PT Mono
+
+@font-face {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/pt-mono-v7-cyrillic-regular.woff2") format("woff2"), url("../../fonts/pt-mono-v7-cyrillic-regular.woff") format("woff");
+  font-display: swap;
+}
+
+// Roboto
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../fonts/roboto-v20-cyrillic-500.woff2") format("woff2"), url("../../fonts/roboto-v20-cyrillic-500.woff") format("woff");
+  font-display: swap;
+}
