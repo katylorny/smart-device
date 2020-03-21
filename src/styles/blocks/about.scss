@@ -1,0 +1,129 @@
+@import "../utils/variables";
+
+.about {
+  background-color: white;
+  padding-top: 33px;
+}
+
+.about__wrapper {
+  margin: 0 auto;
+  max-width: 1190px;
+  padding: 0 42px 0 187px;
+  position: relative;
+}
+
+.about__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 317px;
+  background-image: url("../img/2005@1x.png");
+}
+
+.about h2 {
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #666666;
+  margin-bottom: 21px;
+}
+
+.about p {
+  font-family: $pt-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  color: #666666;
+  letter-spacing: 0.16px;
+  margin-bottom: 22px;
+}
+
+.about__button {
+  color: $blue;
+  border-color: $blue;
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 16px;
+  margin-left: 0;
+  padding: 13px 38px 14px 45px;
+}
+
+//@media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+//  .about__wrapper::before {
+//    background-image: url("../img/2005@2x.png");
+//  }
+//}
+
+@media (max-width: $desktop-width) {
+  .about {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .about__wrapper {
+    max-width: 770px;
+    padding: 0 47px 0 200px;
+  }
+
+  .about h2 {
+    font-size: 32px;
+  }
+
+  .about p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .about__add-text {
+    display: none;
+  }
+
+  .about__main-text {
+    position: relative;
+  }
+
+  .about__main-text::after {
+    content: "..";
+    position: absolute;
+    right: -24px;
+    bottom: 0;
+  }
+
+  .about__button {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  //.about {
+  //
+  //}
+
+  .about__wrapper {
+    max-width: 340px;
+    padding: 1px 27px 0 21px;
+  }
+
+  .about__wrapper::before {
+    display: none;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about p {
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: -11px;
+    margin-bottom: 51px;
+  }
+}

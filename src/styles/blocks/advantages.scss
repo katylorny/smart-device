@@ -1,0 +1,134 @@
+@import "../utils/variables";
+
+.advantages {
+  background: white;
+  padding-top: 91px;
+}
+
+.advantages__wrapper {
+  margin: 0 auto;
+  max-width: 1190px;
+  padding: 0 10px 0;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  display: block;
+  width: calc(50% - 15px);
+  padding: 70px 58px 47px 38px;
+  border: 1px solid $grey;
+  border-left: 3px solid $blue;
+  margin: 5px 2px 25px -2px;
+  flex-shrink: 1;
+  cursor: pointer;
+  min-height: 299px;
+}
+
+.advantages__item:hover {
+  background-color: $blue;
+  border: none;
+}
+
+.advantages__item h3 {
+  color: $blue;
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+
+.advantages__item p {
+  font-family: $pt-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  color: #666666;
+}
+
+.advantages__item:hover h3,
+.advantages__item:hover p {
+  color: white;
+}
+
+
+@media (max-width: $desktop-width) {
+  .advantages {
+    padding-top: 33px;
+  }
+
+  .advantages__wrapper {
+    max-width: 770px;
+    padding: 0 10px 0;
+  }
+
+  .advantages__item {
+    margin: 5px 30px 24px 2px;
+    padding: 42px 34px 14px 24px;
+    width: calc(50% - 32px);
+    min-height: 232px;
+  }
+
+  .advantages__item h3 {
+    letter-spacing: -2px;
+  }
+
+  .advantages__item p {
+    font-family: $pt-mono;
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages {
+    padding-top: 16px;
+  }
+
+  .advantages__wrapper {
+    max-width: 340px;
+    padding: 0 33px 0 17px;
+  }
+
+  .advantages__list {
+    flex-direction: column;
+  }
+
+  .advantages__item {
+    width: 100%;
+    margin-left: 0;
+    padding: 50px 20px 20px 24px;
+    margin-bottom: 15px;
+  }
+
+
+  .advantages__item h3 {
+    font-size: 18px;
+    letter-spacing: 0;
+    margin-bottom: 0;
+  }
+
+
+  .advantages__item--suppliers {
+    padding-right: 19px;
+  }
+
+  .advantages__item--confidentiality {
+    padding-top: 41px;
+  }
+
+  .advantages__item--confidentiality p {
+    margin-top: -17px;
+  }
+}

@@ -9,6 +9,7 @@
 }
 
 .presentation__wrapper {
+  position: relative;
   margin: 0 auto;
   max-width: 1511px;
   display: flex;
@@ -90,8 +91,8 @@
 .presentation img {
   flex-shrink: 0;
   position: absolute;
-  right: 43px;
-  top: 276px;
+  right: -24px;
+  top: 140px;
 }
 
 @media (max-width: $desktop-width) {
@@ -138,8 +139,8 @@
   }
 
   .presentation img {
-    right: -86px;
-    top: 161px;
+    right: -217px;
+    top: -24px;
     width: 465px;
     height: 340px;
   }
@@ -172,8 +173,8 @@
   }
 
   .presentation img {
-    right: 136px;
-    top: 161px;
+    right: 7px;
+    top: -25px;
     width: 301px;
     height: 220px;
   }
