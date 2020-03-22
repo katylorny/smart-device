@@ -3,6 +3,7 @@
 .about {
   background-color: white;
   padding-top: 33px;
+  padding-bottom: 105px;
 }
 
 .about__wrapper {
@@ -65,7 +66,7 @@
 @media (max-width: $desktop-width) {
   .about {
     padding-top: 0;
-    padding-bottom: 50px;
+    padding-bottom: 78px;
   }
 
   .about__wrapper {
@@ -103,9 +104,9 @@
 }
 
 @media (max-width: $tablet-width) {
-  //.about {
-  //
-  //}
+  .about {
+    padding-bottom: 18px;
+  }
 
   .about__wrapper {
     max-width: 340px;

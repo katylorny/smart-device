@@ -1,0 +1,157 @@
+@import "../utils/variables";
+
+.services {
+  background-color: $dark;
+  color: white;
+  padding: 59px 0 120px 0;
+}
+
+.services__wrapper {
+  margin: 0 auto;
+  max-width: 1190px;
+  position: relative;
+  padding: 0 9px 0;
+}
+
+.services h2 {
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: white;
+  margin-bottom: 51px;
+}
+
+
+.services__list {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.services__item {
+  display: block;
+  min-height: 620px;
+  width: calc(30% + 18px);
+  position: relative;
+}
+
+.services__item::after {
+  content: "";
+  width: 63px;
+  height: 63px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: $blue url("../img/arrow.svg") no-repeat;
+  background-position: 50% 50%;
+}
+
+.services__item--manufacturing {
+  background: $dark url("../img/manufacturing@1x.png") no-repeat;
+}
+
+.services__item--assembling {
+  background: $dark url("../img/assembling@1x.png") no-repeat;
+}
+
+.services__item--lighting {
+  background: $dark url("../img/lighting@1x.png") no-repeat;
+}
+
+.services__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 50px 147px 10px 37px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.services__link h3 {
+  font-family: $roboto-condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  margin-top: 0;
+}
+
+@media (max-width: $desktop-width) {
+  .services {
+    padding: 19px 0 16px 0;
+  }
+
+  .services__wrapper {
+    max-width: 766px;
+    padding: 0 41px 0 11px;
+  }
+
+  .services__list {
+    flex-direction: column;
+  }
+
+  .services__item {
+    //min-height: auto;
+    width: auto;
+    margin-bottom: 46px;
+    min-height: 256px;
+  }
+
+  .services__item--manufacturing {
+    background: $dark url("../img/manufacturing-tablet@1x.png") no-repeat;
+  }
+
+  .services__item--assembling {
+    background: $dark url("../img/assembling-tablet@1x.png") no-repeat;
+  }
+
+  .services__item--lighting {
+    background: $dark url("../img/lighting-tablet@1x.png") no-repeat;
+  }
+
+  .services h2 {
+    font-size: 32px;
+    margin-bottom: 42px;
+  }
+
+  .services__link h3 {
+    font-size: 18px;
+    max-width: 160px;
+  }
+
+  .services__link {
+    position: relative;
+    z-index: 2;
+    min-height: 256px;
+    padding: 42px 147px 10px 45px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services {
+    padding: 29px 0 20px 0;
+  }
+
+  .services__wrapper {
+    margin: 0 auto;
+    max-width: 340px;
+    padding: 0 33px 0 17px;
+  }
+
+  .services h2 {
+    font-size: 26px;
+    line-height: 1.5;
+  }
+
+  .services__item {
+    margin-bottom: 29px;
+  }
+
+  .services__link {
+    padding: 19px 121px 10px 36px;
+  }
+}
