@@ -1,11 +1,12 @@
 footer.footer
-  div.footer__main
-    div.footer__social
-      a.footer__logo.logo
-        img(src="img/logo.svg" alt="Логотип Smart Device")
-        div.logo__text
-          p Smart Device
-          span умные технологии
+  .footer__main
+    .footer__social
+      a.footer__logo.logo.logo--footer
+        img(src="img/logo.svg" alt="Логотип Smart Device" width="52" height="52")
+        .logo__text
+          img(src="img/logo-name-footer.svg" alt="название" width="134" height="20")
+          img(src="img/logo-technologies.svg" alt="Технологии" width="106" height="15")
+      span.footer__service-devices 1999-2018 SD Service Devices
       ul.footer__social-networks.social
         li.social__item.social__item--fb
           a.social__link.link(href="#" aria-label="Smart Device на Facebook")
@@ -14,38 +15,39 @@ footer.footer
         li.social__item.social__item--vk
           a.social__link.link(href="#" aria-label="Smart Device Вконтакте")
 
-    div.footer__sections.sections
+    .footer__sections.sections
       h2 Разделы сайта
-      ul.sections__list
-        li.sections__item
-          a.sections__link.link(href="#") О компании
-        li.sections__item
-          a.sections__link.link(href="#") Продукты
-        li.sections__item
-          a.sections__link.link(href="#") Производство печатных плат
-        li.sections__item
-          a.sections__link.link(href="#") Монтаж печатных плат
-      ul.sections__list
-        li.sections__item
-          a.sections__link.link(href="#") Комплектующие
-        li.sections__item
-          a.sections__link.link(href="#") Комплектующие
-        li.sections__item
-          a.sections__link.link(href="#") Контакты
+      button.sections__button.accordion-button.closed(type="button")
+      .sections__container
+        ul.sections__list
+          li.sections__item
+            a.sections__link.link(href="#") О компании
+          li.sections__item
+            a.sections__link.link(href="#") Продукты
+          li.sections__item
+            a.sections__link.link(href="#") Производство печатных плат
+          li.sections__item
+            a.sections__link.link(href="#") Монтаж печатных плат
+        ul.sections__list
+          li.sections__item
+            a.sections__link.link(href="#") Комплектующие
+          li.sections__item
+            a.sections__link.link(href="#") Доставка
+          li.sections__item
+            a.sections__link.link(href="#") Контакты
 
-    div.footer__contacts.contacts
+    .footer__contacts.contacts
       h2 Наш офис
-      p г. Мытищи, Олимпийский проспект, д.10
-      a.contacts__link.link(href="tel:+74955894050") +7 (495) 589-40-50
-      a.contacts__link.link(href="tel:+79250038767") +7 (925) 003-87-67
-      a.contacts__link.link(href="tel:+792692608079") +7 (926) 926-080-79
-      a(class='contacts__link' href='tel:+74955894050') +7 (495) 589-40-50
-      a(class='contacts__link' href='tel:+79250038767') +7 (925) 003-87-67
-      a(class='contacts__link' href='tel:+792692608079') +7 (926) 926-080-79
+      button.contacts__button.accordion-button.closed(type="button")
+      .contacts__container
+        p г. Мытищи, Олимпийский проспект, д.10
+        a.contacts__link.link(href="tel:+74955894050") +7 (495) 589-40-50
+        a.contacts__link.link(href="tel:+79250038767") +7 (925) 003-87-67
+        a.contacts__link.link(href="tel:+792692608079") +7 (926) 926-080-79
 
-  div.footer__add
-    span Все права защищены
-    span 1999-2018 SD Service Devices
-    a.footer__link(href='#') Условия конфиденциальности
-    a.footer__link(href='#') Developed by wow studio
+  .footer__add
+    .footer__wrapper
+      span.footer__rights-reserved Все права защищены
+      a.footer__link.footer__link--confidentiality(href='#') Условия конфиденциальности
+      a.footer__link.footer__link--developed(href='#') Developed by wow studio
 

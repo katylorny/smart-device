@@ -1,0 +1,54 @@
+@import "../utils/variables";
+
+.popup {
+  width: 490px;
+  background: $blue;
+  position: fixed;
+  color: white;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.popup h2 {
+  margin-top: 0;
+  font-family: $roboto-condensed;
+  font-size: 28px;
+}
+
+.popup p {
+  font-family: $pt-mono;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.popup input {
+  width: 100%;
+  margin: 0 0 40px;
+}
+
+.popup textarea {
+  margin: 0 0 30px;
+}
+
+.popup__close-button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: url("../../img/icon-close-button.svg") no-repeat 50% 50%;
+  cursor: pointer;
+}
+
+.popup .form__button {
+  width: 100%;
+  margin: 0 0 30px;
+}
+
+.popup-closed {
+  display: none;
+}

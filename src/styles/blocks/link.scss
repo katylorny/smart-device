@@ -1,4 +1,13 @@
 .link {
   text-decoration: none;
   color: black;
+  cursor: pointer;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.link:active {
+  opacity: 0.3;
 }

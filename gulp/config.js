@@ -23,4 +23,4 @@ module.exports = {
   copyDependencies: {
     dist: path.join(src, 'local_modules')
   }
-}
+};

@@ -1,0 +1,36 @@
+@import "../utils/variables";
+
+.social {
+  display: flex;
+  //justify-content: space-between;
+  max-width: 200px;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.social__item {
+  display: block;
+  width: 27px;
+  height: 27px;
+  margin: 5px 9px 5px 5px;
+  cursor: pointer;
+}
+
+.social__item--fb {
+  background: url("../img/icon-fb.svg") no-repeat;
+}
+
+.social__item--ok {
+  background: url("../img/icon-ok.svg") no-repeat;
+}
+
+.social__item--vk {
+  background: url("../img/icon-vk.svg") no-repeat;
+}
+
+
+@media (max-width: $tablet-width) {
+  .social {
+    margin: 0 auto 0 calc(50% - 124px);
+  }
+}

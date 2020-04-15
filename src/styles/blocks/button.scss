@@ -24,6 +24,15 @@
   display: none;
 }
 
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.3;
+}
+
+
 @media (max-width: $tablet-width) {
   .button__text--mobile {
     display: block;

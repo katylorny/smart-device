@@ -3,10 +3,10 @@
 .presentation {
   position: relative;
   z-index: 2;
-  background: #1b2d37 url("../../img/bg-main.png");
+  background: #1b2d37 url("../img/bg-main.png");
   margin-top: -137px;
   padding-top: 137px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .presentation__wrapper {
@@ -16,6 +16,18 @@
   display: flex;
   padding: 145px 50px 130px;
   justify-content: space-between;
+}
+
+.presentation__wrapper::before {
+  content: "";
+  position: absolute;
+  left: 771px;
+  top: 71px;
+  width: 1000px;
+  height: 600px;
+  overflow-x: hidden;
+  //background: url(../img/presentation-big-triangle.svg) no-repeat 94px 6px, url(../img/presentation-little-triangle.svg) no-repeat 40px 205px;
+  background: url("../img/bg-triangles.svg") no-repeat;
 }
 
 .presentation__text {
@@ -31,7 +43,6 @@
   font-weight: bold;
   font-size: 77px;
   line-height: 94px;
-  //letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #ffffff;
   letter-spacing: 7px;
@@ -62,15 +73,17 @@
   background: #00b2ff;
   border: none;
   margin: 37px 5px 5px 94px;
+  width: 63%;
 }
 
-.presentation__button::before {
+
+.presentation__text p::before {
   content: "";
   position: absolute;
   width: 65px;
   height: 2px;
-  top: -95px;
-  left: -93px;
+  top: 15px;
+  left: 0;
   background-color: white;
 }
 
@@ -94,6 +107,12 @@
   position: absolute;
   right: -24px;
   top: 140px;
+}
+
+@media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+  .presentation {
+    background: #1b2d37 url("../img/bg-main@2x.png");
+  }
 }
 
 @media (max-width: $desktop-width) {
@@ -133,10 +152,10 @@
     margin: 37px 5px 5px 82px;
   }
 
-  .presentation__button::before {
-    top: -95px;
+  .presentation__text p::before {
+    top: 11px;
     width: 33px;
-    left: -48px;
+    left: 32px;
   }
 
   .presentation img {
@@ -153,8 +172,14 @@
   }
 
   .presentation__wrapper {
-    max-width: 320px;
+    max-width: 600px;
     padding: 0;
+  }
+
+  .presentation__text {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 18px;
   }
 
   .presentation__text h1 {
@@ -182,11 +207,12 @@
 
   .presentation__button {
     padding: 18px 24px 21px 30px;
-    margin: 0 22px 5px 12px;
+    width: 100%;
+    margin: auto;
   }
 
-  .presentation__button::before {
-    top: -100px;
-    left: -1px;
+  .presentation__text p::before {
+    top: 10px;
+    left: 11px;
   }
 }

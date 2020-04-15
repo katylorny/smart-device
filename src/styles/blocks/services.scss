@@ -69,6 +69,14 @@
   z-index: 2;
 }
 
+.services__item:hover {
+  opacity: 0.8;
+}
+
+.services__item:active {
+  opacity: 0.3;
+}
+
 
 .services__link h3 {
   font-family: $roboto-condensed;
@@ -78,6 +86,20 @@
   line-height: 30px;
   color: white;
   margin-top: 0;
+}
+
+@media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+  .services__item--manufacturing {
+    background: $dark url("../img/manufacturing@2x.png") no-repeat;
+  }
+
+  .services__item--assembling {
+    background: $dark url("../img/assembling@2x.png") no-repeat;
+  }
+
+  .services__item--lighting {
+    background: $dark url("../img/lighting@2x.png") no-repeat;
+  }
 }
 
 @media (max-width: $desktop-width) {
@@ -138,7 +160,7 @@
 
   .services__wrapper {
     margin: 0 auto;
-    max-width: 340px;
+    max-width: 600px;
     padding: 0 33px 0 17px;
   }
 

@@ -1,0 +1,122 @@
+@import "../utils/variables";
+
+.form input {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 50px;
+  width: calc(50% - 16px);
+  padding-left: 10px;
+  color: white;
+}
+
+.form input[name="agree"] {
+  position: absolute;
+  top: 297px;
+  left: 309px;
+  width: auto;
+  height: auto;
+}
+
+.form input::placeholder {
+  color: white;
+  font-family: $pt-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form textarea {
+  border: none;
+  width: 100%;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  min-height: 154px;
+  margin-top: 39px;
+  margin-bottom: 38px;
+  padding: 10px;
+  color: white;
+}
+
+.form textarea::placeholder {
+  color: white;
+  font-family: $pt-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form__button {
+  width: calc(50% - 15px);
+  margin-left: 0;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+
+.form label {
+  max-width: calc(50% - 10px);
+  margin-top: 10px;
+  position: relative;
+  padding-left: 44px;
+  cursor: pointer;
+}
+
+.form label::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.form input[name="agree"]:checked + label::before {
+  background: url("../img/checkmark.svg") no-repeat 50% 50%;
+}
+
+
+@media (max-width: $desktop-width) {
+  .form input {
+    height: 52px;
+  }
+
+  .form textarea {
+    margin-top: 42px;
+    min-height: 159px;
+    margin-bottom: 41px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .form input {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .form textarea {
+    margin-top: 0;
+    min-height: 104px;
+    margin-bottom: 26px;
+  }
+
+  .form__button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form label {
+    max-width: 100%;
+    font-size: 14px;
+    padding-right: 23px;
+    padding-left: 35px;
+    letter-spacing: 2px;
+  }
+
+  .form label::before {
+    top: 2px;
+    left: 1px;
+  }
+}

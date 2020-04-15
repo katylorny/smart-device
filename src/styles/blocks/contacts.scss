@@ -1,0 +1,94 @@
+@import "../utils/variables";
+
+.contacts h2 {
+  font-family: $roboto-condensed;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1b2d37;
+}
+
+.contacts p {
+  font-family: $pt-mono;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1b2d37;
+  opacity: 0.5;
+}
+
+.contacts__link {
+  display: block;
+  font-family: $pt-mono;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1b2d37;
+  opacity: 0.5;
+}
+//
+//.contacts__button {
+//  display: none;
+//}
+
+@media (max-width: $desktop-width) {
+  .contacts h2 {
+    margin-bottom: 25px;
+  }
+
+  .contacts p {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contacts {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 25px;
+    border-top: 1px solid $border;
+    padding-right: 25px;
+  }
+
+  .contacts h2 {
+    margin-top: 0;
+  }
+
+  .contacts__container {
+    width: 100%;
+  }
+
+  .contacts p {
+    width: 100%;
+  }
+
+  .contacts__link {
+    width: 100%;
+  }
+
+  //.contacts__button {
+  //  display: block;
+  //  width: 16px;
+  //  height: 16px;
+  //  border: none;
+  //  background: url("../../img/icon-minus.svg") no-repeat 50% 50%;
+  //}
+  //
+  //.closed {
+  //  background: url("../../img/icon-plus.svg") no-repeat 50% 50%;
+  //}
+  //
+  //.closed + div {
+  //  display: none;
+  //}
+
+  .contacts__radio {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__button {
+    width: 16px;
+    height: 16px;
+  }
+}

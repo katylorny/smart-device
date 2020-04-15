@@ -11,7 +11,6 @@
 .questions__wrapper {
   margin: 0 auto;
   max-width: 1190px;
-  //background: url("../img/paper-airplane.png") no-repeat;
   position: relative;
   z-index: 3;
 }
@@ -23,8 +22,8 @@
   left: -206px;
   width: 2000px;
   //width: 700px;
-  height: 600px;
-  background: url("../img/paper-airplane.png") no-repeat 190px 69px, url("../img/presentation-big-triangle.svg") no-repeat 93px 6px, url("../img/presentation-little-triangle.svg") no-repeat 40px 205px, url("../img/questions-little-triangle.svg") no-repeat 1484px -52px, url("../img/questions-big-triangle.svg") no-repeat 1417px 194px;
+  height: 560px;
+  background: url("../img/paper-airplane.png") no-repeat 190px 69px, url("../img/bg-triangles.svg") no-repeat;
   overflow-x: hidden;
 }
 
@@ -66,75 +65,9 @@
   z-index: 3;
 }
 
-.questions__form input {
-  border: none;
-  background-color: rgba(255, 255, 255, 0.1);
-  height: 50px;
-  width: calc(50% - 16px);
-  padding-left: 10px;
-}
-
-.questions__form input::placeholder {
-  color: white;
-  font-family: $pt-mono;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.questions__form textarea {
-  border: none;
-  width: 100%;
-  resize: none;
-  background-color: rgba(255, 255, 255, 0.1);
-  min-height: 154px;
-  margin-top: 39px;
-  margin-bottom: 38px;
-  padding: 10px;
-}
-
-.questions__form textarea::placeholder {
-  color: white;
-  font-family: $pt-mono;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.questions__button {
-  width: calc(50% - 15px);
-  margin-left: 0;
-  padding-bottom: 12px;
-}
-
-.questions__form label {
-  max-width: calc(50% - 10px);
-  margin-top: 10px;
-  position: relative;
-  padding-left: 44px;
-  cursor: pointer;
-}
-
-.questions__form label::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 12px;
-  width: 16px;
-  height: 16px;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.questions__form input[name="agree"]:checked + label::before {
-  background: url("../img/checkmark.svg") no-repeat 50% 50%;
-}
-
 @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
   .questions__wrapper::before {
-    background: url("../../img/paper-airplane@2x.png") no-repeat 190px 69px, url("../img/presentation-big-triangle.svg") no-repeat 93px 6px, url("../img/presentation-little-triangle.svg") no-repeat 40px 205px, url("../img/questions-little-triangle.svg") no-repeat 1484px -52px, url("../img/questions-big-triangle.svg") no-repeat 1417px 194px;
+    background: url("../img/paper-airplane@2x.png") no-repeat 190px 69px, url("../img/bg-triangles.svg") no-repeat;
     background-size: 511px 288px;
   }
 }
@@ -171,16 +104,6 @@
     margin-left: 10px;
     max-width: 100%;
   }
-
-  .questions__form input {
-    height: 52px;
-  }
-
-  .questions__form textarea {
-    margin-top: 42px;
-    min-height: 159px;
-    margin-bottom: 41px;
-  }
 }
 
 @media (max-width: $tablet-width) {
@@ -190,7 +113,7 @@
   }
 
   .questions__wrapper {
-    max-width: 340px;
+    max-width: 600px;
     padding: 0 25px 0 15px;
   }
 
@@ -203,34 +126,5 @@
   .questions p {
     font-size: 16px;
     margin-bottom: 26px;
-  }
-
-  .questions__form input {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .questions__form textarea {
-    margin-top: 0;
-    min-height: 104px;
-    margin-bottom: 26px;
-  }
-
-  .questions__button {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .questions__form label {
-    max-width: 100%;
-    font-size: 14px;
-    padding-right: 23px;
-    padding-left: 35px;
-    letter-spacing: 2px;
-  }
-
-  .questions__form label::before {
-    top: 2px;
-    left: 1px;
   }
 }

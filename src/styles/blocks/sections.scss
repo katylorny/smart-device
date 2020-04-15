@@ -1,0 +1,96 @@
+@import "../utils/variables";
+
+//.sections {
+.sections__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sections__link {
+  font-family: $pt-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1b2d37;
+  opacity: 0.5;
+}
+
+.sections__radio {
+  width: 100%;
+}
+
+.sections h2 {
+  font-family: $roboto-condensed;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1b2d37;
+  width: 100%;
+}
+
+.sections__item {
+  display: block;
+}
+
+.sections__list {
+  padding: 0;
+  margin: auto 10px auto;
+}
+
+//.sections__button {
+//  display: none;
+//}
+
+@media (max-width: $desktop-width) {
+  //.sections {
+  .sections__container {
+    flex-direction: column;
+  }
+
+  .sections h2 {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  //.sections__list {
+  //  display: none;
+  //}
+  //
+  //.sections input:checked ~ .sections__list {
+  //  display: block;
+  //}
+
+  .sections {
+    border-top: 1px solid $border;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .sections__container {
+    flex-direction: row;
+    //display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .sections__radio {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sections__list {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .sections h2 {
+    width: auto;
+    margin-top: 0;
+  }
+}

@@ -60,6 +60,13 @@
   color: white;
 }
 
+.advantages__icon {
+  fill: $blue;
+}
+
+.advantages__item:hover .advantages__icon {
+  fill: white;
+}
 
 @media (max-width: $desktop-width) {
   .advantages {
@@ -67,7 +74,7 @@
   }
 
   .advantages__wrapper {
-    max-width: 770px;
+    max-width: 1270px;
     padding: 0 10px 0;
   }
 
@@ -97,7 +104,7 @@
   }
 
   .advantages__wrapper {
-    max-width: 340px;
+    max-width: 700px;
     padding: 0 33px 0 17px;
   }
 
