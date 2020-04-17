@@ -1,54 +1,8 @@
-// import focusTrap from "focus-trap"
+import "./modules/mask"
+import "./modules/scroll"
+import "./modules/accordion"
 
 (function () {
-
-    // маска формы телефона
-    $(`input[type="tel"]`).mask(`+7(999)999-99-99`)
-
-
-    // плавная прокрутка ссылок-якорей
-    $(document).ready(function () {
-        $(`.presentation__scroll`).on(`click`, function (event) {
-            event.preventDefault()
-            // eslint-disable-next-line no-invalid-this
-            const id = $(this).attr(`href`)
-            const top = $(id).offset().top
-            $(`body, html`).animate({ scrollTop: top }, 600)
-        })
-    })
-
-    $(document).ready(function () {
-        $(`.presentation__button`).on(`click`, function (event) {
-            event.preventDefault()
-            // eslint-disable-next-line no-invalid-this
-            const id = $(this).attr(`href`)
-            const top = $(id).offset().top
-            $(`body, html`).animate({ scrollTop: top }, 600)
-        })
-    })
-
-
-    // аккордеон
-    const accordionButton = Array.from(document.querySelectorAll(`.accordion-button`))
-
-    const closeAccordion = () => {
-        accordionButton.forEach((el) => {
-            el.classList.add(`closed`)
-        })
-    }
-
-    accordionButton.forEach((el) => {
-        el.addEventListener(`click`, () => {
-            if (el.classList.contains(`closed`)) {
-                closeAccordion()
-                el.classList.remove(`closed`)
-            } else {
-                el.classList.add(`closed`)
-            }
-        })
-    })
-
-
     // попап
 
     const popup = document.querySelector(`.popup`)
