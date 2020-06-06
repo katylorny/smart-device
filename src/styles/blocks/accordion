@@ -10,11 +10,11 @@
     width: 16px;
     height: 16px;
     border: none;
-    background: url("../../img/icon-minus.svg") no-repeat 50% 50%;
+    background: url("../img/icon-minus.svg") no-repeat 50% 50%;
   }
 
   .closed {
-    background: url("../../img/icon-plus.svg") no-repeat 50% 50%;
+    background: url("../img/icon-plus.svg") no-repeat 50% 50%;
   }
 
   .closed + div {

@@ -15,6 +15,7 @@
   "author": "Denys Vykhrystiuk",
   "license": "ISC",
   "devDependencies": {
+    "jhgfdkjfhgdfkjhg": "4.6.7",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@htmlacademy/editorconfig-cli": "^1.0.0",
